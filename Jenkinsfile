@@ -1,1 +1,10 @@
-pipeline{agent any;{ stages{ stage(build){steps{echohello jenkins}}}}}
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello Jenkins'
+            }
+        }
+    }
+}
